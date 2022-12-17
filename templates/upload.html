@@ -1,0 +1,145 @@
+<html>
+<head>
+        <!-- BOOTSTRAP -->
+
+        <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+        crossorigin="anonymous"
+      />
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"
+      ></script>
+  
+      <!-- stylesheet -->
+      <link rel="stylesheet" href="static/css/style.css" />
+<style>
+body  {
+    margin: 0;
+  padding: 0;
+
+    background: linear-gradient(#233329, #63D471 );
+}
+* {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+
+
+        }
+
+     
+
+        form {
+            display: flex;
+            height: 85vh;
+            justify-content: center;
+            align-items: center;
+            margin-top: -150px;
+            width: 60%;
+            text-align: center;
+			margin-left:300px;
+            
+        }
+
+
+        .details h2 {
+            
+            position: relative;
+            top: 100px;
+            margin: auto;
+            color: rgb(18, 231, 231);
+            font-size: 3rem;
+        }
+
+        label:hover {
+            transform: scale(1.03);
+        }
+
+        .details h2 {
+            /* margin-bottom: 300px; */
+            position: relative;
+            top: 100px;
+            margin: auto;
+            color: rgb(18, 231, 231);
+            font-size: 3rem;
+
+        }
+
+      
+
+
+        .details h1 {
+            color: white;
+            padding: 20px;
+            border-radius: 15px;
+            background-color: rgb(8, 8, 8);
+        }
+
+
+        .upload {
+
+            font-size: 20px;
+            background-color: rgb(103, 190, 4);
+            border-radius: 20px;
+            outline: none;
+            width: 500px;
+            color: rgb(0, 0, 0);
+            border: 3px solid rgb(45, 47, 49);
+
+
+
+        }
+
+        ::-webkit-file-upload-button {
+            color: rgb(255, 252, 252);
+            padding: 20px;
+            border: 2px solid #238a03;
+            background-color: #238a03;
+            border-radius: 15px;
+
+        }
+
+        ::-webkit-file-upload-button:hover {
+            border-radius: 20px;
+            border: 2px solid rgb(177, 174, 174);
+
+
+        }
+
+
+
+        input[type="submit"] {
+            position: absolute;
+            margin-top: 200px;
+            padding: 15px 35px;
+            background-color: #238a03;
+            border-radius: 15px;
+            color: black;
+            font-size: 1.5rem;
+            border: 4px solid rgb(31, 185, 190);
+        }
+</style>
+</head>
+<body id="google_element">
+	  <h1 style="text-align:center;font-size:4rem; margin-top: 50px;color: #D6D5CB;">Predict Tomato Leaf Disease & Get Cure</h1>
+<section >
+            <form action="/predict" method="post" enctype="multipart/form-data" onsubmit="showloading()">
+                <input type="file" name="image" class="upload">
+				<br>
+				<br>
+                <input type="submit" value="Predict">
+            </form>
+        </div>
+    </section>
+    <script src="http://translate.google.com/translate_a/element.js?cb=loadGoogleTranslate"></script>
+    <script>
+        function loadGoogleTranslate() {
+          new google.translate.TranslateElement("google_element");
+        }
+      </script>
+</body>
+</html>
