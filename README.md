@@ -1,4 +1,4 @@
-# pied-piper
+# Yapita - DL project
 Hackerrupt'22 
 
 # Deep learning project
